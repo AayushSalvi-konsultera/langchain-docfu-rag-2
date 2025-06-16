@@ -1,0 +1,288 @@
+nohup: ignoring input
+2025-05-22 12:05:59,439 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+INFO:     Started server process [160852]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     34.96.46.155:29273 - "GET /health HTTP/1.1" 200 OK
+INFO:     34.96.46.155:62331 - "GET /health HTTP/1.1" 200 OK
+INFO:     34.96.46.155:29316 - "GET /health HTTP/1.1" 200 OK
+INFO:     34.96.46.155:52953 - "GET /health HTTP/1.1" 200 OK
+2025-05-22 12:09:04,536 - main - INFO - Processing request - Entity: VP, Intent: credit_analysis_factors
+2025-05-22 12:09:04,573 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-05-22 12:09:08,106 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-05-22 12:09:08,108 - main - INFO - Successfully processed request
+INFO:     34.96.46.155:50925 - "POST /process HTTP/1.1" 200 OK
+INFO:     64.23.181.190:59982 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     64.23.181.190:59994 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     34.96.45.163:28522 - "GET /health HTTP/1.1" 200 OK
+INFO:     68.69.186.106:38596 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:51630 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:43296 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     185.242.226.48:35538 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:33574 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:38964 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:48890 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:43898 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:57140 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     167.94.145.101:49514 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.145.101:50132 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.145.101:50152 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.145.101:50216 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.56:58552 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:39096 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:57220 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     147.185.132.138:60690 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:45284 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:54768 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     143.110.151.3:53286 - "GET / HTTP/1.1" 404 Not Found
+INFO:     143.110.151.3:53302 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:40092 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     199.45.154.151:42868 - "GET / HTTP/1.1" 404 Not Found
+INFO:     199.45.154.151:56256 - "GET / HTTP/1.1" 404 Not Found
+INFO:     199.45.154.151:56260 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.154.151:56302 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:41552 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:51350 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:59466 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:46930 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:49938 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:38776 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:42516 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     205.210.31.135:65056 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:36778 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:53908 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:54784 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     205.210.31.140:61900 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:48302 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:41664 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:42554 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     34.96.44.163:34238 - "GET /health HTTP/1.1" 200 OK
+INFO:     68.69.186.106:40144 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:45542 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     206.168.34.206:37970 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.206:54962 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.206:54990 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.206:51870 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:36574 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:55422 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     45.156.128.45:37201 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:41412 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:48158 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:42166 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:56368 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:46086 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:39458 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     64.62.156.11:35869 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:40734 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     64.62.156.15:31997 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.19:29603 - "GET http%3A//api.ipify.org/?format=json HTTP/1.1" 404 Not Found
+INFO:     64.62.156.21:9237 - "CONNECT www.shadowserver.org%3A443 HTTP/1.1" 404 Not Found
+INFO:     172.104.210.105:47627 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.228:57544 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:53612 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     45.79.181.223:32998 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:59674 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:59864 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     8.222.179.13:44308 - "GET / HTTP/1.1" 404 Not Found
+INFO:     8.222.179.13:44310 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     3.143.33.63:57824 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.143.33.63:43474 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:52054 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:39718 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:55722 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:57912 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:47256 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:32964 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:53416 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:39726 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:37660 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:36264 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:36802 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:36604 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:53260 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:39140 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     198.235.24.219:60870 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:55564 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:34094 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:44552 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     147.185.132.30:63720 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.208:28373 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.203:30577 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.207:52953 - "GET http%3A//api.ipify.org/?format=json HTTP/1.1" 404 Not Found
+INFO:     64.62.156.207:49687 - "CONNECT www.shadowserver.org%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:36710 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     195.184.76.129:45799 - "GET / HTTP/1.1" 404 Not Found
+INFO:     195.184.76.240:46861 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:56598 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:59596 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.15:59058 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:36986 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:43194 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     87.236.176.140:36127 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:44190 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:59200 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     172.210.9.172:52920 - "GET / HTTP/1.1" 404 Not Found
+INFO:     203.23.179.27:64098 - "GET /sse HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:40094 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:50502 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:57048 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.42:53618 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:48602 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:52396 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.111:45815 - "GET / HTTP/1.1" 404 Not Found
+INFO:     147.185.132.111:60878 - "GET / HTTP/1.1" 404 Not Found
+INFO:     91.231.89.106:57519 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:52878 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:40312 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:55226 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     3.149.59.26:40048 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:48352 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     206.168.34.194:33060 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.194:33072 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.194:36336 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.215:54590 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.215:50296 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.215:50306 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.215:50308 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:58228 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.32.131.245:54124 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.32.131.245:54130 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     152.32.131.245:54146 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     152.32.131.245:54148 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     152.32.131.245:54162 - "GET /sse HTTP/1.1" 404 Not Found
+INFO:     152.32.131.245:54164 - "GET /mcp HTTP/1.1" 404 Not Found
+INFO:     152.32.131.245:54170 - "GET /mcp-sse HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:44008 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:45422 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:52082 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:56262 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     148.113.214.206:53118 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:50936 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:39050 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     167.172.37.60:45934 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:47270 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     103.203.57.20:46258 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:33776 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:56178 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:50196 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     44.220.185.247:44890 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:33582 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:41272 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:38536 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:37906 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:53436 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     198.235.24.101:64042 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.235.24.214:65348 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:46340 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:55614 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     65.49.1.38:7589 - "GET / HTTP/1.1" 404 Not Found
+INFO:     65.49.1.45:51317 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.1.50:50187 - "GET http%3A//api.ipify.org/?format=json HTTP/1.1" 404 Not Found
+INFO:     65.49.1.51:48489 - "CONNECT www.shadowserver.org%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:60598 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:49432 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:34946 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:40578 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:50732 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:51778 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:55140 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:52682 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:58278 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     206.168.34.79:35920 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.79:52556 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.79:52584 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.79:49872 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     68.69.186.106:45468 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     198.235.24.132:61690 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:42970 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     178.128.95.222:56136 - "GET /aaa9 HTTP/1.1" 404 Not Found
+INFO:     178.128.95.222:56150 - "GET /aab8 HTTP/1.1" 404 Not Found
+INFO:     178.128.95.222:56164 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:46470 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:58588 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:38982 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:33082 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:47810 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     205.210.31.207:61448 - "GET / HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:48114 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     211.230.132.183:60395 - "GET / HTTP/1.0" 404 Not Found
+INFO:     139.59.72.31:49674 - "GET / HTTP/1.1" 404 Not Found
+INFO:     139.59.72.31:49690 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:40548 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:50194 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:36324 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:42390 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:49478 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:56012 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.106:42428 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     205.210.31.138:65032 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:36344 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:47980 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:39420 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:37722 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     74.82.47.13:57055 - "GET / HTTP/1.1" 404 Not Found
+INFO:     74.82.47.5:9549 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     74.82.47.25:62669 - "GET http%3A//api.ipify.org/?format=json HTTP/1.1" 404 Not Found
+INFO:     74.82.47.61:18169 - "CONNECT www.shadowserver.org%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:51370 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:44298 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     205.210.31.49:63794 - "GET / HTTP/1.1" 404 Not Found
+INFO:     147.185.132.216:64472 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.53.248.175:57288 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     68.69.186.42:41936 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.195:43346 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.195:41636 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.168.34.195:41656 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.195:41726 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.53.248.175:34634 - "CONNECT www.google.com%3A443 HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [160852]

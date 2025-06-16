@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package validator;
+
+import "mcp_gateway/protos/mcp_core.proto";
+import "agents/searcher/mcp_server/searcher.proto";
+
+service ValidatorAgent {
+  rpc Validate (ValidationInput) returns (ValidationOutput);
+}
+
+message ValidationInput {
+  mcp.core.UserQuery original_query = 1;
+  mcp.core.McpResponse rag_response = 2;
+  optional searcher.SearchResponse web_results = 3;  // Only when web search enabled
+}
+
+message ValidationOutput {
+  mcp.core.McpResponse base = 1;
+  
+  enum SelectedSource {
+    RAG = 0;
+    WEB = 1;
+    HYBRID = 2;
+  }
+  
+  SelectedSource chosen_source = 2;
+  string final_output = 3;
+  
+  message SourceScore {
+    float relevance = 1;
+    float consistency = 2;
+    float confidence = 3;
+  }
+  
+  map<string, SourceScore> scores = 4;  // Keys: "rag", "web"
+}

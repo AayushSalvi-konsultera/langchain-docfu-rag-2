@@ -1,0 +1,6 @@
+# mcp_gateway/config/agent_registry.yaml
+validator:
+  endpoints:
+    - "validator-1:50052"
+    - "validator-2:50052"
+  load_balancing: round_robin
