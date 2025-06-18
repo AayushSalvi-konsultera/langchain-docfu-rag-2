@@ -12,8 +12,9 @@ PROJECT_ROOT = os.path.abspath(
 )
 sys.path.insert(0, PROJECT_ROOT)
 print(PROJECT_ROOT)
-from agents.searcher.service.web import Search
-from agents.searcher.mcp_client.schemas import ToolRequest, ToolResponse
+from service.web import Searcher
+searcher_instance = Searcher()
+from mcp_client.schemas import ToolRequest, ToolResponse
 
 app = FastAPI(title="Searcher Agent")
 
@@ -21,7 +22,7 @@ MCP_SERVER_URL = os.getenv("MCP_SERVER_URL")
 
 TOOLS ={
     "Searcher": {
-        "function": Search,
+        "function": searcher_instance.search,
         "description": "Gives search result for given query",
         "parameters": {"query":"str"}
     }
@@ -38,23 +39,23 @@ async def root():
     }
 
 
-@app.post("tools/{tool_name}")
+@app.post("/tools/{tool_name}")
 async def execute_tool(tool_name: str, request: ToolRequest) -> ToolResponse:
     """Execute a specific tool"""
     if tool_name not in TOOLS:
         raise HTTPException(status_code=404, detail=f"Tool '{tool_name} not found")
     
     try:
-        tool_info = TOOLS[tool_name]
-        tool_function = tool_info["function"]
-        link, summary = tool_function(**request.user_q)
+        tool_function = TOOLS["Searcher"]["function"]
+        results = tool_function(request.user_q)
 
-        return ToolResponse(link=link,
-                            summary= summary)
+        if not results:
+            return ToolResponse(results=[])
 
-    
+        return ToolResponse(results=results)
+
     except Exception as e:
-        return ToolResponse(link= None, summary= str(e))
+        return ToolResponse(results=[{"title": "Error", "link": str(e)}])
 
 
 @app.post("/register-with-mcp")
@@ -99,6 +100,6 @@ async def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app,host="0.0.0.0",port=int(os.environ.get("PORT",8000)))
+    uvicorn.run(app,host="0.0.0.0",port=int(os.environ.get("PORT",8080)))
 
     
