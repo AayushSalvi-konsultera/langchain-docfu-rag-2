@@ -1,0 +1,11 @@
+fastapi
+langchain_core
+langchain_huggingface
+langchain_pinecone
+protobuf
+pydantic
+python-dotenv
+tenacity
+uvicorn
+google-genai 
+sentence-transformers

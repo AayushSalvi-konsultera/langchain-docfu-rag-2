@@ -1,6 +1,5 @@
 fastapi
+httpx
+pydantic
+python-dotenv
 uvicorn
-pinecone-client
-langchain
-
-

@@ -2,14 +2,15 @@ from llm.gemini import GeminiClient
 from typing import List
 from langchain_core.documents import Document
 from pydantic import BaseModel
+from typing import Optional, List
+
 
 class RAGRequest(BaseModel):
     user_q: str
-    faq_q: str = ""
-    intent: str = ""
-    entity: str = ""
-    concept: str = ""
-
+    faq_q: Optional[str] = None
+    intent: Optional[str] = None
+    entity: Optional[str] = None
+    concept: Optional[List[str]] = None
 class RAGChain:
     def __init__(self, retriever):
         self.retriever = retriever
