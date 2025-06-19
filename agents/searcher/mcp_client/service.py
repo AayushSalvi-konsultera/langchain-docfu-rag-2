@@ -12,8 +12,9 @@ PROJECT_ROOT = os.path.abspath(
 )
 sys.path.insert(0, PROJECT_ROOT)
 print(PROJECT_ROOT)
-from service.web import Searcher
-searcher_instance = Searcher()
+#from service.web import Searcher
+from service.google_web import GoogleSearcher 
+searcher_instance = GoogleSearcher()
 from mcp_client.schemas import ToolRequest, ToolResponse
 
 app = FastAPI(title="Searcher Agent")

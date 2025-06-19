@@ -256,11 +256,11 @@ class Searcher:
             logger.error(f"API search failed: {e}")
             return []
 
-# Usage
-# if __name__ == "__main__":
-#     searcher = Searcher()
-#     results = searcher.search("what is EBITA", 10)
+Usage
+if __name__ == "__main__":
+    searcher = Searcher()
+    results = searcher.search("what is EBITA", 10)
     
-#     for i, result in enumerate(results, 1):
-#         print(f"{i}. {result['title']}")
-#         print(f"   {result['link']}\n")
+    for i, result in enumerate(results, 1):
+        print(f"{i}. {result['title']}")
+        print(f"   {result['link']}\n")

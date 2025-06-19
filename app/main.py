@@ -1,20 +1,19 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from rag.chains.rag_chains import RAGChain, RAGRequest
-from rag.retrievers.pinecone import PineconeRetriever
 import logging
+import httpx 
+from typing import Optional
 import os
-from rag.chains.context import ChainContext
 from fastmcp import Client
+from schemas import ProcessRequest,ProcessResponse
 
-
-config = {
-    "mcpServers": {
-        "local": {"command": "python", "args": ["local_server.py"]},
-        "remote": {"url": "https://url.com/mcp"},
-    }
-}
-mcp_client = Client(config)
+# config = {
+#     "mcpServers": {
+#         "local": {"command": "python", "args": ["local_server.py"]},
+#         "remote": {"url": "https://url.com/mcp"},
+#     }
+# }
+# mcp_client = Client(config)
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -27,8 +26,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Initialize services
-retriever = PineconeRetriever()
-rag_chain = RAGChain(retriever)
+# retriever = PineconeRetriever()
+# rag_chain = RAGChain(retriever)
 
 app = FastAPI(
     title="Credit Analyst RAG Service",
@@ -45,7 +44,7 @@ app.add_middleware(
 )
 
 @app.post("/process")
-async def process_request(request: RAGRequest):
+async def process_request(request: ProcessRequest):
     """
     Process credit analysis request through RAG pipeline
     
@@ -57,17 +56,9 @@ async def process_request(request: RAGRequest):
     - concept: Key concepts involved (optional)
     """
     try:
-        logger.info(f"Processing request - Entity: {request.entity}, Intent: {request.intent}")
-        logger.debug(f"Full request: {request.dict()}")
+        route = "rag"
+
         
-        rag_response = await rag_chain.invoke(request)
-
-
-        logger.info("Successfully processed request")
-        return {
-            "answer": rag_response,
-            "sources": [],  # default to empty list
-        }
         
     except Exception as e:
         logger.error(f"Processing failed: {str(e)}")
@@ -94,12 +85,12 @@ async def health_check():
             detail=f"Service unhealthy: {str(e)}"
         )
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(
-        app,
-        host="0.0.0.0",
-        port=int(os.getenv("PORT", 8000)),
-        log_level="info"
-    )
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(
+#         app,
+#         host="0.0.0.0",
+#         port=int(os.getenv("PORT", 8000)),
+#         log_level="info"
+#     )
     
